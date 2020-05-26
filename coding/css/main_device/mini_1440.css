@@ -1,0 +1,7 @@
+/* mini_1440.css */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    #viewBox{height:46.132812vw;}
+
+    #infoBox {height:424px;}
+}

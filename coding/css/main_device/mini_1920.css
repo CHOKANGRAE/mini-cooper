@@ -1,0 +1,10 @@
+/* mini_1920.css */
+
+@media screen and (min-width:1920px) {
+    #viewBox{height:52.222222vw;}
+
+    #infoBox{height:424px;}
+    
+    #infoBox > ul {width:100%;}
+
+}
