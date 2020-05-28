@@ -102,18 +102,68 @@ h1 > a{
   width: 100%; height:10%;
 }
 
-.info_select_box > ul {width: 100%; height: 100%; text-align: center;}
+.info_select_box > ul {width: 50%; height: 100%; margin:auto; text-align: center;}
 .info_select_box li {float:left; width: 50%; height: 100%; line-height: 50px;}
 
 .customer_info{
-  width:100%; height:90%;
+  width:100%; height:70%;
 }
 
-.customer_info > label {margin-left:50px;}
+.customer_info > ul{
+  width: 100%; height: 100%;
+}
 
-.namnue > ul {width: 200px; height: 50px; background-color: #333;}
-.namnue li {width: 100px; height: 50px ; background-color: #fff;}
+.customer_info li{
+  width:100%; height:50px; 
 
+}
+
+.customer_info dl {
+  width:100%; height:100%;
+}
+
+.customer_info dt{float:left; text-align:right;
+                  width:30%; margin-right:5%;}
+.customer_info dd{float:left; width:65%; font-size:1rem;}
+
+.customer_info dd >  button{
+  width:100px; height:30px;
+  border-radius: 5px;
+  border:2px solid #333;
+}
+
+.customer_info dd > button:focus{
+  background-color: #425067; color:#fff; font-weight: bold;
+}
+
+.customer_info dd > ul {
+  width:100%; height:100px;
+}
+
+.customer_info dd > ul > li {
+  float:left; width:50px; height: 25px; margin-right:2px; margin-bottom:2px;
+  border-radius: 5px; border:2px solid #425067; text-align: center;
+}
+
+/* inputBox 내부 요소 디자인 */
+.inputBox{width:150px; height:20px; border-radius: 3px;}
+
+.phoneBox{ width:80px; height:20px; border-radius: 3px;}
+
+
+/* ===================== */
+
+.apply_box{width:300px; height:20%;
+           margin-left:45%; margin-top:5%;}
+
+.apply_box > button{
+  width: 100px; height:30px;
+  border-radius:7px; border:2px solid #333;
+  font-size: 1rem; line-height: 15px;
+  font-weight: bold;
+}
+
+.apply_btn{background-color: #425067; color:#fff; }
 
 /* ==== //#applyBox =============================== */
 
@@ -203,3 +253,5 @@ h1 > a{
 }
 
 /* ==== //#footBox =============================== */
+
+/* 연락처 ,생년월일 각 input 박스 설정하기*/

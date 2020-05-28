@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../css/base/reset.css">
 <link rel="stylesheet" href="../css/base/common.css">
 
-<link rel="stylesheet" href="../css/src/mini_apply.css">
+<link rel="stylesheet" href="../css/mini_apply/apply_base.css">
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -32,12 +32,12 @@
       
       <div class="cars">
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><span class="hidden"> mini_car_01 </span></li>
+          <li><span class="hidden"> mini_car_02 </span></li>
+          <li><span class="hidden"> mini_car_03 </span></li>
+          <li><span class="hidden"> mini_car_04 </span></li>
+          <li><span class="hidden"> mini_car_05 </span></li>
+          <li><span class="hidden"> mini_car_06 </span></li>
         </ul>
       </div>
 
@@ -67,35 +67,76 @@
         </div>
 
         <div class="customer_info">
-              <label for="searchArea">이름</label>
-              <input type="search" id="searchArea" name="searchArea" value="" required /> 
-              <br />
-              <br />
+          <ul>
+            <li>
+              <dl>
+                <dt>이름</dt>
+                <dd><input type="text" class="name inputBox" name="textArea"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>연락처</dt>
+                <dd><input type="text" class="phone1 phoneBox" name="textArea" ><span> -</span>
+                <input type="text" class="phone2 phoneBox" name="textArea" ><span> -</span>
+                <input type="text" class="phone3 phoneBox" name="textArea" ></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>이메일</dt>
+                <dd><input type="text" class="email inputBox" name="textArea"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>생년월일</dt>
+                <dd><input type="date" class="birthday inputBox" name="textArea"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>성별</dt>
+                <dd>
+                  <button type="button" class="men"> 남자 </button>
+                  <button type="button" class="women"> 여자 </button>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>전시장선택</dt>
+                <dd>
+                  <ul>
+                    <li>서울</li>
+                    <li>인천</li>
+                    <li>경기</li>
+                    <li>충청</li>
+                    <li>경남</li>
+                    <li>경북</li>
+                    <li>전라</li>
+                    <li>제주</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>동의</dt>
+                <dd>
+                  <input type="checkbox" class="agreecheck" name="agreecheck">
+                  <label for="agreecheck">개인정보 수집이용 동의(필수)</label>
+                  <input type="checkbox" class="agreecheck" name="agreecheck">
+                  <label for="agreecheck">개인정보 마케팅활용 동의(선택)</label>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
 
-              <label for="searchArea">연락처</label>
-              <input type="search" id="searchArea" name="searchArea" value="" required /> 
-              <br />
-              <br />
-
-              <label for="searchArea">이메일</label>
-              <input type="search" id="searchArea" name="searchArea" value="" required /> 
-              <br />
-              <br />
-
-              <label for="searchArea">생년월일</label>
-              <input type="date">
-              <br />
-              <br />
-
-              <label for="searchArea" class="namnue"> 성별 </label>
-              <ul>
-                <li>남성</li> <li>여성</li>
-              </ul>
-              <br />
-              <br />
-
-              <label for="searchArea"> 전시장선택 </label>
-
+        <div class="apply_box">
+          <button type="button" class="apply_btn"> 신청하기 </button>
+          <button type="button" class="cancel_btn"> 취소  </button>
         </div>
       </div>
     </div>

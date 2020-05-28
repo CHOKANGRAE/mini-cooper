@@ -1,16 +1,16 @@
 /*mini_320.css*/
 
-@media screen and (max-width: 639px){
+@media screen and (max-width: 639px) {
     #gnb{display: none;}
     #gnb_mob{display:block;}
     /*#gnb_mob:focus, .gnb_mob_menu{display:block;}*/
 
     /* ===== */
-    #viewbox{display:none;}
+    #viewBox{display:none;}
 
-    #infobox{height:600px;}
+    #infoBox{height:600px;}
 
-    #galbox{display: none;}
+    #galBox{display: none;}
 
     .sns_box{display:none;}
 }
