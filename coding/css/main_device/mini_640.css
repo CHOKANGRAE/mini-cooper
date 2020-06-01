@@ -5,7 +5,7 @@
 
     #gnb_mob{display:block;}
 
-    /*#gnb_mob:hover .gnb_mob_menu{display:block;}*/
+    #gnb_mob:focus .gnb_mob_menu{display:block;}
     
   /* ======================================= */
     #viewBox{height:39.0625vw;}
@@ -26,12 +26,14 @@
   /* ======================================= */
     #galBox{display: none;}
 
+    .news_area
+
 
   /* ======================================= */
     
 
   /* ======================================= */
-    .customer_box{width:80%;}
+    .customer_box{width:71.40625vw;}
 
     .sns_box{display:none;}
   
