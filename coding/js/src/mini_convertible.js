@@ -1,51 +1,42 @@
 // mini_convertible.js
-/*
+/* 580px */
 (function($){
 
-  //변수 설정
+  // 스크롤 시 tabBox 고정 및 top 버튼 생성
+  var tabBox = $('#tabBox').offset().top;
+  var topMvBtn = $('.topMvBtn');
+  var timed = 500;
 
-  var tabBox = $('#tabBox');
-  var tabLi1 = tabBox.find('.tab_01');
-    var tabLi1Link = tabLi1.children('a');
-  var tabLi2 = tabBox.find('.tab_02');
-    var tabLi2Link = tabLi2.children('a');
-  var tabLi3 = tabBox.find('.tab_03');
-    var tabLi3Link = tabLi3.children('a');
+  $(window).on('scroll', function(){
+  $('#tabBox').css({'position':'fixed', 'bottom':'auto', 'top':0});
 
-  var tabArea =$('.tabArea');
-  var modelBox = $('#modelBox');
-  var detailBox = $('#detailBox');
-  var dataBox = $('#dataBox');
-
-  //tab menu
-
-
-  tabLi1Link.on('click',function(e){
-    e.preventDefault();
-    
-    modelBox.show();
-    detailBox.hide();
-    dataBox.hide();
+  var wScroll = $(this).scrollTop();
+  if(tabBox < wScroll){
+  }else{
+    $('#tabBox').removeAttr('style');
+  }
+  
+  var winScroll = $(window).scrollTop();
+  (winScroll >= 580) ? topMvBtn.stop().fadeIn(timed) : topMvBtn.stop().fadeOut(timed);
+  
   });
 
+  // aside#infoBox 마우스 올릴 시 설명표시 slide
+  var infoBox = $('#infoBox');
+  var infoBoxExplain = $('.info_explain');
 
-  tabLi2Link.on('click',function(e){
+  infoBox.on('mouseover',function(e){
     e.preventDefault();
-
-    modelBox.hide();
-    detailBox.show();
-    dataBox.hide();
+    infoBoxExplain.show("slide", { direction: "right" }, 300);
   });
 
-
-  tabLi3Link.on('click',function(e){
+  infoBox.on('mouseleave',function(e){
     e.preventDefault();
 
-    modelBox.hide();
-    detailBox.hide();
-    dataBox.show();
+    infoBoxExplain.hide("slide", { direction: "right" }, 300);
   });
+
+  // designBox 선택한 사진 클릭 시 팝업창 설명 띄우기
+
 
 })(jQuery);
-
-/*

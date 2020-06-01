@@ -41,7 +41,7 @@
     #gnb{
       width:750px; height: 50px;
       margin-top:10px;
-      font-size: 10pt; font-weight: bold;
+      font-size: 1rem; font-weight: bold;
     }
 
     #gnb > ul {
@@ -94,19 +94,19 @@
     }  
   /* ==== //#headBox =============================== */
 
-  /* gnb 모바일 버젼 ======================================= */
+  /* gnb 모바일/탭 ======================================= */
 
   .gnb_mob_menu{
     display:none;
     position:absolute; z-index:600;
-    width:100%; height:100%;
+    width:100%; height:80%;
     background-color: rgba(0,0,0,0.8);
   }
 
   .gnb_mob_menu > ul {
     width:100%; height:80%;
     text-align: center;
-    font-size:60pt;
+    font-size:4rem;
     color:#fff;
     padding:50px; box-sizing: border-box;
   }
@@ -115,32 +115,20 @@
 
   .gnb_sns{
     width:100%; height:20%;
-    margin-left:23%; }
+    margin-left:20%; }
 
   .gnb_sns_box{
     float:left;
     width:20%; height:70%;
-    
+    margin-right:2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  .gnb_sns_01{
-    background-image: url(../../img/icons/sns/facebook.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-  .gnb_sns_02{
-    background-image: url(../../img/icons/sns/instagram.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-  .gnb_sns_03{
-    background-image: url(../../img/icons/sns/youtube.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  .gnb_sns_01{background-image: url(../../img/icons/sns/facebook.png);}
+  .gnb_sns_02{background-image: url(../../img/icons/sns/instagram.png);}
+  .gnb_sns_03{background-image: url(../../img/icons/sns/youtube.png);}
 
   /* == //aside ======================================= */
   /* ====== #viewBox ================================ */
@@ -161,8 +149,6 @@
     transform: translateY(-50%);
     border-radius: 30px;
   }
-
-
   /* =================== */
   .view_guide{
     position: absolute; z-index:400;
@@ -175,7 +161,7 @@
   
   .view_details{
     float:left;
-    width:105px; height: 100%;
+    width:49%; height: 100%;
     background-color: #0085ac;
   }
 
@@ -186,7 +172,7 @@
   
   .drive_test{
     float:right; z-index:100;
-    width:105px; height: 100%;
+    width:49%; height: 100%;
     background-color: #333;
   }
 
@@ -213,8 +199,8 @@
 
   .slide_banner_box span{
     display: block;
-    padding-top:4%; margin-left:100px;
-    font-weight: bold; font-size:30pt;
+    padding-top:3%; margin-left:100px;
+    font-weight: bold; font-size:2.5rem;
     color:#fff;
   }
 
@@ -239,11 +225,13 @@
     line-height: 28px; 
   }
 
-  #infoBox > ul {width:100%; height:220px;}
+  #infoBox > ul {
+    margin:auto;
+    width:100%; height:220px;}
 
   #infoBox li {
     float:left; 
-    margin-right:15px; margin-top:20px;
+    margin-right:18px; margin-top:20px;
     width:15%; height: 150px;}
 
   #infoBox li:last-child{margin-right:0;}
@@ -307,6 +295,7 @@
   .gal_slide_btn{
     position: absolute; 
     top:50%; left:12%;
+    left:50%; transform: translateX(-50%);
     width:75%; height: 0;
   }
   
@@ -379,16 +368,16 @@
   #newsBox > h2 {padding-top:50px; margin-left: 50px;}
 
   .news_area {
-    width:920px; height:230px;
+    width:90%; height:230px;
     margin:auto; margin-top:10px;}
 
     .news_info {
       float:left;
-      width:440px; height:100%;}
+      width:60%; height:100%;}
     
       .news_box{
         float:left;
-        width:120px; height:166px;
+        width:25%; height:166px;
         background-color: #133261;
         margin-top:44px;
         margin-left:24px;
@@ -398,22 +387,22 @@
       }
         .news_pic{
           position: relative; z-index:10;
-          width:122px; height:80px;
+          width:100%; height:80px;
           right:14px; bottom:14px;
           background-color: #fff;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
         }
 
-        .np_01{background-image: url('../../img/image/newsBox/topic-2.teaserimage.768w.png');
-               background-size: cover;}
-        .np_02{background-image: url('../../img/image/newsBox/VISION_NEXT_100.teaserimage.768w.jpg');
-               background-size: cover;}
-        .np_03{background-image: url('../../img/image/newsBox/topic-3.teaserimage.768w.png');
-               background-size: cover;}
+        .np_01{background-image: url('../../img/image/newsBox/topic-2.teaserimage.768w.png');}
+        .np_02{background-image: url('../../img/image/newsBox/VISION_NEXT_100.teaserimage.768w.jpg');}
+        .np_03{background-image: url('../../img/image/newsBox/topic-3.teaserimage.768w.png');}
       
 
   .showroom {
       float:right;
-      width:440px; height:100px;
+      width:40%; height:100px;
       margin-top:40px;
       background-color: #fff;
       padding:15px; box-sizing: border-box;}
@@ -422,7 +411,7 @@
     .showroom_info{
       margin-top:15px;
       width:190px; height: 30px;
-      color:#fff; font-size:11pt;
+      color:#fff; font-size:1rem;
       font-weight: bold;
       padding:2px; box-sizing: border-box;
       background-color: #0085ac;
@@ -433,6 +422,8 @@
       margin-left:10px; margin-top:2px;
       width:16px; height:22px;
       background-image: url(../../img/icons/icon/location.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
       background-size: cover;
     }
 
@@ -453,25 +444,27 @@
 .customer_box{
   float:left;
   margin-left:80px;
-  width:736px; height:70px;}
+  width:71.875vw; height:auto;}
 
   .customer_box > ul {
-    width:730px; height:28px;
-    background-color: #fff;
+    width:71.289062vw; height:2.73vw;
     padding:3px; box-sizing: border-box;
   }
 
   .customer_box li {
     float:left;
     margin-right:4px;
-    color:#fff;
+    color:#333;
     font-size:8pt;
     text-align: center;
     width:100px; height:20px;
-    background-color: #333;
+    background-color: #fff;
   }
 
   .customer_box li:last-child{margin-right:0;}
+
+  .customer_box li:hover,
+  .customer_box li:focus{font-weight: bold;}
 
 .sns_box{
   float:right; 
@@ -514,7 +507,7 @@
 
 .mini_info_box_area{
   margin-top:5px;
-  width:500px; height: 100px;
+  width:100%; height: 100px;
   background-color: #fff;
   font-size:9pt;
   font-weight: bold;

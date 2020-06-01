@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../css/base/reset.css">
 <link rel="stylesheet" href="../css/base/common.css">
 
-<link rel="stylesheet" href="../css/mini_apply/apply_base.css">
+<link rel="stylesheet" href="../css/src/mini_apply.css">
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -28,7 +28,7 @@
   <article id="applyBox">
     <div class="modelBox apply_area">
       <h2 class="hidden"> 관심 모델 선택 </h2>
-      <p> 관심 모델을 선택해주세요.</p>
+      <p> 관심 모델 선택</p>
       
       <div class="cars">
         <ul>
@@ -132,9 +132,11 @@
                 <dt>동의</dt>
                 <dd>
                   <input type="checkbox" class="agreecheck" name="agreecheck">
-                  <label for="agreecheck">개인정보 수집이용 동의(필수)</label>
+                  <label for="agreecheck" class="agreetitle">개인정보 수집이용 동의(필수)</label>
+                </dd>
+                <dd class="agree">
                   <input type="checkbox" class="agreecheck" name="agreecheck">
-                  <label for="agreecheck">개인정보 마케팅활용 동의(선택)</label>
+                  <label for="agreecheck" class="agreetitle">개인정보 마케팅활용 동의(선택)</label>
                 </dd>
               </dl>
             </li>

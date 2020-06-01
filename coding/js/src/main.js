@@ -1,4 +1,13 @@
 (function($){
+
+  var gnbMenu = $('.gnb_mob_menu');
+  var gnbMob = $('#gnb_mob');
+
+  gnbMob.on('click',function(e){
+    e.preventDefault();
+    gnbMenu.css({display:'block'});
+  });
+
   // viewBox ================================================================
   var viewBox = $('#viewBox');
   var slideBtn = $('.slide_btn');

@@ -143,12 +143,19 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    padding:5%; box-sizing: border-box;
   }
 
   .view_area > p{
     color:#fff;
     font-size:2.5rem;
-    padding-top:5%; margin-left:10%;
+    margin-left:5%;
+  }
+
+  .viewTitle{
+    width:500px;
+    border-top:2px solid #fff;
+    font-weight: bold;
   }
 
   /* ==== //#viewBox =============================== */
@@ -185,10 +192,26 @@
 
   #infoBox li > a{display:block; width: 100%; height: 100%;}
 
+  .info_explain{
+    display:none;
+    float:right; 
+    width:100px; height:30px; 
+    margin-right:33px; 
+    line-height: 30px;
+    padding-left:5px;
+    font-size:0.9rem;
+    color:#fff;
+    background-color: #333;
+  }
+
+
+
   /* ====== #tabBox =============================== */
   #tabBox{
     width:100%; height:80px;
     padding:20px; box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:0.2rem 0.2rem 0.2rem #ddd  ;
   }
 
   #tabBox > ul{
@@ -340,7 +363,7 @@
               .design_04{background-image: url(../../img/image/mini_convertible/detailBox/design_04.jpg);}
               .design_05{background-image: url(../../img/image/mini_convertible/detailBox/design_05.jpg);}
               .design_06{background-image: url(../../img/image/mini_convertible/detailBox/design_06.jpg);}
-              .design_07{background-image: url(../../img/image/mini_convertible/detailBox/design_06.jpg);}
+              .design_07{background-image: url(../../img/image/mini_convertible/detailBox/design_07.png);}
               .design_08{background-image: url(../../img/image/mini_convertible/detailBox/design_08.jpg);}
               .design_09{background-image: url(../../img/image/mini_convertible/detailBox/design_09.jpg);}
 
@@ -421,23 +444,43 @@
         }
 
         .outSideCar {
-          height:800px;
+          height:450px;
           border-bottom:2px solid #eee; box-sizing:border-box;
         }
 
             .outSideCar_text{
-              width:90%; height:200px;
-              margin:auto;
-              background-color: #333;
+              float:left;
+              padding-left:10%;
+              width:20%; height:200px;
             }
-            .outSideCar > ul{
-              width:90%; height:400px;
-              margin:auto; background-color: #ccc;
+
+            .outSideCar_text > p{
+              width:90%;
+              border-bottom:1px solid #333;
+              padding-top:5%;
+            }
+
+            .outSideCar_area{
+              float:left;
+              width:60%; height:300px;
+              overflow-x:scroll;
+            }
+
+            .outSideCar_area > ul{
+              width: 200%; height: 100%;
+              background-color: #F1F1F1;
             }
 
             .outSideCar li{
-              float:left; height:45%; background-color: #333;
+              float:left; height:100%; 
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: contain;
             }
+
+            .out_area_01{width:30%; background-image: url(../../img/image/mini_convertible/dataBox/out_01.jpg);}
+            .out_area_02{width:30%; background-image: url(../../img/image/mini_convertible/dataBox/out_02.jpg);}
+            .out_area_03{width:40%; background-image: url(../../img/image/mini_convertible/dataBox/out_03.jpg);}
 
         .technology{
           height:600px;
@@ -452,6 +495,21 @@
           background-size: contain;
         }
         /* ==== //#dataBox =============================== */
+
+    .topMvBtn{
+      position: fixed; right:2%; bottom:2%;
+      z-index: 1000;
+      width: 50px; height: 50px;
+      background-color: #425067;
+      background-image: url(../../img/image/mini_convertible/up-arrow.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+
+    .topMvBtn > a{
+      display:block; width:100%; height:100%;
+    }
 
   /* ====== #footBox =============================== */
   #footBox{
