@@ -40,7 +40,7 @@
 
   textarea{margin:0; padding: 0.5rem; box-sizing: border-box;
            border:1px solid #777;}
-
+/*
   select{margin:0; padding:0; box-sizing: border-box;
          border:1px solid #777;
          
@@ -48,5 +48,3 @@
          -webkit-appearance:button;
          -moz-appearance: button;
          /*appearance: button;}*/
-
-  header, article, section, nav, footer, aside, main{display:block;}
