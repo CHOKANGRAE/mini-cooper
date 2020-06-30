@@ -1,4 +1,4 @@
-@charset="utf-8";
+@charset "utf-8";
 /*reset.css*/
 :root{font-size:16px;}
 
@@ -47,6 +47,6 @@
          
          -webkit-appearance:button;
          -moz-appearance: button;
-         appearance: button;}
+         /*appearance: button;}*/
 
   header, article, section, nav, footer, aside, main{display:block;}
