@@ -57,18 +57,18 @@
       display: none;
       position: absolute; z-index: 600;
       margin-top:26px;
-      width:220px; height:200px;
+      width:220px; height:250px;
       background-color: rgba(255,255,255,0.7);
     }
 
     #gnb li:hover .gnb_box{display: block;}
 
-    .gnb_box > ul {width:220px; height:200px;
+    .gnb_box > ul {width:220px; height:300px;
                    padding:10px; box-sizing: border-box;}
 
     .gnb_box > ul > li {
       float:left; 
-      width:200px; height:20px;
+      width:200px; height:25px;
       margin-bottom:10px;
       padding-left:5px; box-sizing: border-box;
       text-align:left;
@@ -94,7 +94,7 @@
     }  
   /* ==== //#headBox =============================== */
 
-  /* gnb 모바일/탭 ======================================= */
+  /* gnb 모바일 ======================================= */
 
   .gnb_mob_menu{
     display:none;
@@ -142,7 +142,6 @@
     top:50%; left:5%;
     width:90%; height: 0;
   }
-  
   .slide_btn > button {
     float:left; 
     width:50px; height: 60px;
@@ -158,24 +157,20 @@
     line-height: 28px;
     color:#fff; font-weight: bold;
   }
-  
   .view_details{
     float:left;
     width:49%; height: 100%;
     background-color: #0085ac;
   }
-
   .view_details:hover{
     color:#0085ac;
     background-color: #fff;
   }
-  
   .drive_test{
     float:right; z-index:100;
     width:49%; height: 100%;
     background-color: #333;
   }
-
   .drive_test:hover{
     color:#333;
     background-color: #fff;
@@ -185,25 +180,21 @@
   width:100%; height:100%;
   overflow: hidden;
   }
-
   .slide_banner_box > ul{
   width:500%; height:100%;
   }
-
   .slide_banner_box li {
     float:left; width:20%; height:100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .slide_banner_box span{
     display: block;
     padding-top:3%; margin-left:100px;
     font-weight: bold; font-size:2.5rem;
     color:#fff;
   }
-
   .slide_ban_01{background-image: url(../../img/image/viewBox/mini_convertible.jpg);}
   .slide_ban_02{background-image: url(../../img/image/viewBox/mini_contryman.jpg);}
   .slide_ban_03{background-image: url(../../img/image/viewBox/mini_clubman.jpg);}
